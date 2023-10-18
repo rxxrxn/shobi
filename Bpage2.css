@@ -1,0 +1,184 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+    background-image: url(birthday.jpeg);
+    background-size: cover;
+}
+
+h1{
+    text-align: center;
+    margin-top: 80px;
+    font-size: 70px;
+    color: rgb(120, 130, 155);
+}
+.container {
+    margin-top: 80px;
+    width: 400px;
+    height: 400px;
+    background-color: rgb(120, 130, 155);
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    border-radius: 8px;
+    box-shadow: 0 45px 50px rgba(40, 28, 12, 0.5);
+  }
+  .cake {
+    width: 100%;
+    position: absolute;
+    bottom: 60px;
+  }
+  .bottom-layer,
+  .top-layer,
+  .middle-layer {
+    height: 80px;
+    width: 240px;
+    position: relative;
+    margin: auto;
+    background-repeat: repeat;
+    background-size: 100% 100%, 60px 100px;
+    background-position: 28px 0;
+    background-image: linear-gradient(
+        transparent 50px,
+        #d4973a 50px,
+        #a16317 60px,
+        transparent 60px
+      ),
+      radial-gradient(circle at 30px 5px, #d4973a 30px, #fbffc1 31px);
+  }
+  .middle-layer {
+    transform: scale(0.85);
+    top: 72px;
+    animation: rise-1 2s forwards;
+  }
+  @keyframes rise-1 {
+    100% {
+      top: 7px;
+    }
+  }
+  .top-layer {
+    transform: scale(0.7);
+    top: 144px;
+    animation: rise-2 2s 2s forwards;
+  }
+  @keyframes rise-2 {
+    100% {
+      top: 26px;
+    }
+  }
+  .candle {
+    background: repeating-linear-gradient(
+      80deg,
+      #1868fd 0,
+      #186 5px,
+      #ffa89e 5px,
+      #ffa89e 10px
+    );
+    height: 45px;
+    width: 15px;
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    animation: rise-3 1s 4s forwards;
+  }
+  @keyframes rise-3 {
+    100% {
+      bottom: 202px;
+    }
+  }
+  .candle:after {
+    content: "";
+    position: absolute;
+    height: 16px;
+    width: 16px;
+    background-color: #ffee54;
+    border-radius: 0 50% 50% 50%;
+    transform: scale(0) rotate(45deg);
+    bottom: 50px;
+    left: -0.5px;
+    animation: flame 1.5s 5s forwards infinite;
+  }
+  @keyframes flame {
+    100% {
+      transform: scale(1) rotate(45deg);
+    }
+  }
+
+  /* birthdau wish */
+h2{
+  font-size: 100px;
+  font-family:'Times New Roman', Times, serif;
+  font-weight: 500;
+  text-align: center;
+  color: whitesmoke;
+  border: 4px #56565a solid;
+}  
+p{
+  font-size: 25px;
+  text-align: center;
+  margin: 60px;
+  color: white;
+}
+
+
+
+/* button */
+button{
+    margin-left: 45%;
+    text-align: center;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: rgb(67, 67, 131);
+    border: 7px whitesmoke solid;
+    animation-name: blink;
+    animation-duration: 0.5s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+}
+button a{
+  text-decoration: none;
+  color: whitesmoke;
+  font-size: 20px;
+}
+@keyframes blink {
+  0%{background-color:#f4e0b9;}
+  50%{background-color: #a8a196;}
+  100%{background-color: #7d7463;}
+  0%{font-size: 30px;}
+  50%{font-size: 20px;}
+  100%{font-size: 30px;}
+}
+.heart{
+  font-size: 350px;
+  color: rgb(131, 82, 91);
+  display: flex;
+  justify-content: center;
+  animation: mydil 2s ease-in-out 0.2s infinite alternate;
+}
+@keyframes mydil {
+  0%{color:#403d41;}
+  50%{color: #231a1b;}
+  100%{color: #0b0808;}
+}
+video{
+  margin-left: 33%;
+}
+.cheesecake{
+  display: flex;
+  justify-content: center;
+  color: ghostwhite;
+  font-size: larger;
+}
+#surprise{
+  text-align: center;
+  font-size: xx-large;
+  color: #998d25;
+}

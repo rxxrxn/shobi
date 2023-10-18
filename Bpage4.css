@@ -1,0 +1,27 @@
+*{
+    padding: 0;
+    margin: 0;
+    color: antiquewhite;
+}
+body{
+    background-color: hotpink;
+    background-image: url(pexels-maryann-kariuki-4303031.jpg);
+    background-size: cover;
+}
+h1{
+    text-align: center;
+    font-size: 80px;
+    margin-top: 30px;
+}
+h2{
+    text-align: center;
+    font-size: 80px;
+    margin-top: 20px;
+}
+.icon-bell{
+    background-image: url(bell.png);
+    height: 400px;
+    width: 400px;
+    background-size: cover;
+    margin-left: 35%;
+}

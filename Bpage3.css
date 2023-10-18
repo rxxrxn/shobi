@@ -1,0 +1,138 @@
+*{
+    padding: 0;
+    margin:0;
+    color: whitesmoke;
+}
+body{
+    background-image: url(thh2.jpeg);
+    background-size: cover;
+}
+h1{
+    color: aliceblue;
+    text-align: center;
+    font-size: 70px;
+    margin-top: 20px;
+    padding: 10px;
+}
+h2{
+    font-size: 50px;
+    margin-top: 20px;
+    text-align: center;
+}
+.smile{
+    height: 180px;
+    width: 180px;
+    border: 2px solid black;
+    background-color: lightpink;
+    margin-top: 50px;
+    position: absolute;
+    right: 8%;
+    border-radius: 50%;
+}
+.eye1{
+    height: 30px;
+    width:30px;
+    border: 2px solid black;
+    border-radius: 50%;
+    position: absolute;
+    top: 30%;
+    left: 20%;
+    background-color: black;
+}
+.eye2{
+    height: 30px;
+    width:30px;
+    border: 2px solid black;
+    border-radius: 50%;
+    position: absolute;
+    right: 20%;
+    top:30%;
+    background-color: black;
+}
+.mouth{
+    height: 50px;
+    width: 70px;
+    border: 2px solid black;
+    position: absolute;
+    bottom: 20px;
+    left: 30%;
+    right: 20%;
+    border-end-end-radius: 50%;
+    border-end-start-radius: 50%;
+    background-color: rgb(149, 50, 50);
+}
+.heart1{
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    color: red;
+}
+.heart2{
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    color: red;
+}
+.smile:hover{
+    background-color: palegoldenrod;
+}
+.smile:hover .heart1{
+    color: plum;
+}
+.smile:hover .heart2{
+    color: plum;
+}
+.smile:hover .mouth{
+    background-color: pink;
+}
+p{
+    font-size: 20px;
+}
+.buttons{
+    display: flex;
+    justify-content: space-evenly;
+}
+button{
+    color: black;
+    height: 70px;
+    width: 140px;
+    border-radius: 10%;
+    font-size: 20px;
+    
+}
+a{
+    color: palevioletred;
+    text-decoration: none;
+}
+#wait{
+    text-align: center;
+    font-size: 80px;
+    margin: 50px;
+    color: rgb(247, 223, 190);
+}
+#reasons{
+    font-size: 50px;
+    text-align: left;
+    color: rgb(187, 110, 123);
+    margin: 15px;
+}
+#feelings{
+    font-size: 25px;
+    text-align: justify;
+    margin: 20px;
+}
+#questions{
+    font-size: 20px;
+    color: antiquewhite;
+    margin: 20px;
+}
+#answer{
+    font-size: 25px;
+    text-align: center;
+    margin: 20px;
+}
+#love-reasons{
+    color: lightblue;
+    font-size: 20px;
+    margin: 40px;
+}
